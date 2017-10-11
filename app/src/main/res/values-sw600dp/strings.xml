@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="favoris_message">Added to favorite list</string>
+    <string name="remove_favoris">Removed from favorite list</string>
+    <string name="favoris_not_available">Movie info not available yet</string>
+    <string name="internet_available">Good! Connected to Internet</string>
+</resources>

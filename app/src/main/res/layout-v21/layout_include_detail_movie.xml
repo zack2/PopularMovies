@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundParentCard"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_detail"
+    app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:showIn="@layout/activity_detail"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:id="@+id/layout_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/card_item_detail_movie" />
+
+            <ProgressBar
+                android:id="@+id/pb_loader"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fadeScrollbars="true"
+        android:animateLayoutChanges="true"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:transitionGroup="true"
+        android:nestedScrollingEnabled="true"
+        tools:targetApi="lollipop"/>
+</LinearLayout>

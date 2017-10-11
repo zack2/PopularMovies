@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_item_text_size_sw600">25sp</dimen>
+    <dimen name="margin_left_sw600dp">10dp</dimen>
+    <dimen name="card_item_margin_left_sw600">14dp</dimen>
+</resources>

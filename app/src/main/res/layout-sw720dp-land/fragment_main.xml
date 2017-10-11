@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.MainActivityFragment">
+
+
+    <LinearLayout
+        android:id="@+id/layout_info_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_etabl"
+            android:layout_width="@dimen/height_imageview"
+            android:layout_height="@dimen/height_imageview"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/img_item"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_report_problem"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/txt_sigle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:text="@string/no_data_in_bd"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_info_favoris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_"
+            android:layout_width="@dimen/height_imageview"
+            android:layout_height="@dimen/height_imageview"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/img_item"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_report_problem"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/txt_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:text="@string/no_favoris"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_info_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_width="@dimen/height_imageview"
+            android:layout_height="@dimen/height_imageview"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/img_item"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_no_network"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:text="@string/no_internet_connexion"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_movies_sw720"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

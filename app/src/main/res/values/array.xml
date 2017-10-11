@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortEntries">
+        <item>popular</item>
+        <item>Highest Rated</item>
+        <!--<item>Latest</item>-->
+        <item>Now playing</item>
+        <item>UpComing</item>
+        <item>Favorites</item>
+    </string-array>
+
+    <string-array name="sortValues">
+        <item>popular</item>
+        <item>top_rated</item>
+        <!--<item>latest</item>-->
+        <item>now_playing</item>
+        <item>upcoming</item>
+        <item>favorites</item>
+
+    </string-array>
+
+</resources>
